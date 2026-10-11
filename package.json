@@ -1,0 +1,57 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": ".",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nishithakomati1501/HelloVibe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nishithakomati1501/HelloVibe/issues"
+  },
+  "homepage": "https://github.com/nishithakomati1501/HelloVibe#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^26.6.5",
+    "@types/pg": "^8.23.1",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.6.0",
+    "pg": "^8.23.1",
+    "playwright": "^1.64.0",
+    "playwright-core": "^1.64.0",
+    "undici-types": "^8.9.0"
+  },
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "lib": [
+      "ES2022"
+    ],
+    "types": [
+      "node"
+    ],
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "tests/**/*.ts",
+    "pages/**/*.ts",
+    "data/**/*.ts",
+    "helpers/**/*.ts",
+    "utils/**/*.ts",
+    "playwright.config.ts"
+  ]
+}

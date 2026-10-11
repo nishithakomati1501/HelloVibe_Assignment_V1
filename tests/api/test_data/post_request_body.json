@@ -1,0 +1,23 @@
+[{ "validBooking": {
+    "firstname" : "Jim",
+    "lastname" : "Brown",
+    "totalprice" : 111,
+    "depositpaid" : true,
+    "bookingdates" : {
+        "checkin" : "2018-01-01",
+        "checkout" : "2019-01-01"
+    },
+    "additionalneeds" : "Breakfast"
+}},
+{ "negativeBooking": {
+    "firstname" : "Negative",
+    "lastname" : "Case",
+    "totalprice" : 100,
+    "depositpaid" : false,
+    "bookingdates" : {
+        "checkin" : "2030-06-10",
+        "checkout" : "2030-06-12"
+    },
+    "additionalneeds" : "Breakfast"
+}}
+]

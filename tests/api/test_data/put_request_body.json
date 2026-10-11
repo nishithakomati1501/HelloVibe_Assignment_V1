@@ -1,0 +1,11 @@
+{
+    "firstname": "John",
+    "lastname": "Kenedy",
+    "totalprice": 2000,
+    "depositpaid": true,
+    "bookingdates": {
+       "checkin": "2026-09-02",
+        "checkout": "2026-09-07"
+    },
+    "additionalneeds": "orange"
+}
