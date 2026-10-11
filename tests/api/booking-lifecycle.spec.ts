@@ -82,7 +82,7 @@ test("Update Booking - Create, Get, partial update, Update and delete a Booking 
 
 
     // Step 4: Full Update the booking using PUT request with token in headers
-    const updateData = readJson("tests/api/test_data/PUT_request_body.json");
+    const updateData = readJson("tests/api/test_data/put_request_body.json");
 
     const updateResponse = await request.put(`${BASE_URL}/booking/${bookingId}`, {
         headers: {
