@@ -36,5 +36,9 @@ export default defineConfig({
       testDir: './tests/api',
       use: { baseURL: process.env.API_BASE_URL ?? 'https://restful-booker.herokuapp.com' },
     },
+    {
+      name: 'data-check',
+      testDir: './tests/dataCheck',
+    },
   ],
 });

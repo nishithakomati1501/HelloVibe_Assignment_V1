@@ -8,4 +8,4 @@ node_modules/
 /playwright/.cache/
 /playwright/.auth/
 /e2e/
-/env/
+/.env/
