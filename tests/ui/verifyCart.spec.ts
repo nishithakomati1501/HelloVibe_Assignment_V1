@@ -3,7 +3,7 @@ import { selectedProducts } from '../../data/products';
 import { users } from '../../data/users';
 import { test } from '../fixtures';
 
-const productsInCart = selectedProducts.slice(0, 2);
+const productsInCart = selectedProducts.slice(0, 2); // Select the first two products for the cart tests
 
 test.beforeEach(async ({ loginPage, inventoryPage, cartPage }) => {
   await loginPage.open();
@@ -11,13 +11,13 @@ test.beforeEach(async ({ loginPage, inventoryPage, cartPage }) => {
 
   for (const product of productsInCart) {
     await inventoryPage.addProduct(product.name);
-  }
+  } // Add the selected products to the cart before each test
 
   await cartPage.open();
-});
+});// End of beforeEach hook
 
 test('cart displays the correct item count', async ({ cartPage }) => {
-  await expect(cartPage.items).toHaveCount(productsInCart.length);
+  await expect(cartPage.items).toHaveCount(productsInCart.length); // Assert that the cart displays the correct number of items
 
   for (const product of productsInCart) {
     await expect(cartPage.item(product.name)).toBeVisible();

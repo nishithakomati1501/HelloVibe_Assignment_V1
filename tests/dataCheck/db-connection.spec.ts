@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { db } from '../../utils/db';
+import { db } from '../../helpers/db';
 
 test('connect to PostgreSQL and verify tables', async () => {
   try {

@@ -1,6 +1,6 @@
 import { defineConfig, devices } from '@playwright/test';
 
-const isCI = !!process.env.CI;
+const isCI = !!process.env.CI;// Determine if the tests are running in a CI environment
 
 export default defineConfig({
   fullyParallel: true,
@@ -14,7 +14,7 @@ export default defineConfig({
     ['html', { open: 'never', outputFolder: 'playwright-report' }],
     ['junit', { outputFile: 'test-results/junit.xml' }],
   ],
-  expect: { timeout: 5_000 },
+  expect: { timeout: 5_000 }, // Set the default timeout for expect assertions to 5 seconds
   use: {
     testIdAttribute: 'data-test', // Swag Labs uses data-test, not data-testid
     trace: 'on-first-retry',
@@ -39,6 +39,11 @@ export default defineConfig({
     {
       name: 'data-check',
       testDir: './tests/dataCheck',
+    },
+    {
+      name: 'default',
+      testDir: './tests',
+      testMatch: '**/*.spec.ts',
     },
   ],
 });

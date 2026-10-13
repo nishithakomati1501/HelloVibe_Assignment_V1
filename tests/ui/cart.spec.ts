@@ -28,8 +28,8 @@ test('standard user can add the Backpack and Bike Light to the cart', async ({
       productCard.getByRole('button', { name: 'Remove', exact: true })
     ).toBeVisible();
   }
-  await expect(inventoryPage.cartBadge).toHaveText(String(products.length));
-  await page.pause()
+  await expect(inventoryPage.cartBadge).toHaveText(String(products.length)); // Assert that the cart badge displays the correct number of items
+ 
 });
 test('cart contains both selected products', async ({
   page,
